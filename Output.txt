@@ -1,0 +1,100 @@
+"C:\Users\antho\PycharmProjects\AHS Project\venv\Scripts\python.exe" "C:\Users\antho\PycharmProjects\AHS Project\Patient Test.py" 
+Patients Menu:
+1 - Display patients list
+2 - Search for patient by ID
+3 - Add patient
+4 - Edit patient info
+5 - Back to the Main Menu
+1
+ID        Name           Disease        Gender         Age
+12        Pankaj         Cancer         Male           30
+13        Janina         Cold           Female         23
+14        Alonna         Malaria        Female         45
+15        Ravi           Diabetes       Male           65
+Back to previous menu
+
+Patients Menu:
+1 - Display patients list
+2 - Search for patient by ID
+3 - Add patient
+4 - Edit patient info
+5 - Back to the Main Menu
+2
+Enter the Patient's ID: 
+16
+Can't find the patient with the same ID on the system.
+
+Back to previous menu
+
+Patients Menu:
+1 - Display patients list
+2 - Search for patient by ID
+3 - Add patient
+4 - Edit patient info
+5 - Back to the Main Menu
+2
+Enter the Patient's ID: 
+15
+ID        Name           Disease        Gender         Age
+15        Ravi           Diabetes       Male           65
+Back to previous menu
+
+Patients Menu:
+1 - Display patients list
+2 - Search for patient by ID
+3 - Add patient
+4 - Edit patient info
+5 - Back to the Main Menu
+3
+Enter patients’s ID: 
+16
+Enter patient’s name: 
+Mary
+Enter patient's disease: 
+Cancer
+Enter patient's gender: 
+Female
+Enter patient's age: 
+55
+Back to previous menu
+
+Patients Menu:
+1 - Display patients list
+2 - Search for patient by ID
+3 - Add patient
+4 - Edit patient info
+5 - Back to the Main Menu
+1
+ID        Name           Disease        Gender         Age
+12        Pankaj         Cancer         Male           30
+13        Janina         Cold           Female         23
+14        Alonna         Malaria        Female         45
+15        Ravi           Diabetes       Male           65
+16        Mary           Cancer         Female         55
+Back to previous menu
+
+Patients Menu:
+1 - Display patients list
+2 - Search for patient by ID
+3 - Add patient
+4 - Edit patient info
+5 - Back to the Main Menu
+4
+Please enter the id of the patient that you want to edit their information: 
+13
+Enter new Name: 
+Janina
+Enter new disease: 
+Cold & Flu
+Enter new gender: 
+Female
+Enter new age: 
+23
+Traceback (most recent call last):
+  File "C:\Users\antho\PycharmProjects\AHS Project\Patient Test.py", line 20, in <module>
+    my_patient.editPatientInfo()
+  File "C:\Users\antho\PycharmProjects\AHS Project\Patient.py", line 96, in editPatientInfo
+    self.writeListOfPatientsToFile()
+TypeError: Patient.writeListOfPatientsToFile() missing 1 required positional argument: 'list_of_patients'
+
+Process finished with exit code 1
