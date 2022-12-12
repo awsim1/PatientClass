@@ -66,8 +66,7 @@ class Patient:
                 list_of_patients[current_row][4])
             current_row += 1
 
-    # not working requires positional argument!!!!!
-    def editPatientInfo(self):
+    def editPatientInfo(self, list_of_patients):
         id_number = int(input("Please enter the id of the patient that you want to edit their information: \n"))
         self.pid = id_number
         total_rows = len(list_of_patients)
@@ -88,7 +87,7 @@ class Patient:
             if patient_found != 'yes' and current_row == last_row:
                 print("Can't find the patient with the same ID on the system\n")
             current_row += 1
-        self.writeListOfPatientsToFile()
+        self.writeListOfPatientsToFile(list_of_patients)
 
     def writeListOfPatientsToFile(self, list_of_patients):
         patients_file = open(file_for_patients, 'w')

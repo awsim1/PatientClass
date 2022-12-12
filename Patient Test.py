@@ -2,6 +2,7 @@ from Patient import Patient
 
 my_patient = Patient()
 isRunning = True
+patient_list = my_patient.readPatientsFile()
 
 while isRunning:
 
@@ -17,7 +18,7 @@ while isRunning:
         my_patient.addPatientToFile()
         print("Back to previous menu\n")
     if patients_menu == 4:
-        my_patient.editPatientInfo()
+        my_patient.editPatientInfo(patient_list)
         print("Back to previous menu\n")
     if patients_menu == 5:
         quit()
